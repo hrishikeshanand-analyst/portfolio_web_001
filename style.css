@@ -31,6 +31,169 @@ img {
     padding: 10px 6%;
 }
 
+/*===================================================================  */
+/* =========================================================
+   SKILLS ANIMATION
+========================================================= */
+
+/* ================================
+   SKILLS MARQUEE
+================================ */
+
+.skills-marquee {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 8px 0;
+    margin-bottom: 25px;
+
+    /* Fade edges */
+    mask-image: linear-gradient(
+        to right,
+        transparent,
+        black 8%,
+        black 92%,
+        transparent
+    );
+
+    -webkit-mask-image: linear-gradient(
+        to right,
+        transparent,
+        black 8%,
+        black 92%,
+        transparent
+    );
+}
+
+
+/* ================================
+   MOVING TRACK
+================================ */
+
+.skills-track {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    width: max-content;
+
+    animation: skillsScroll 25s linear infinite;
+}
+
+
+/* ================================
+   SKILL BOX
+================================ */
+
+.skill-box {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+
+    padding: 9px 16px;
+
+    min-width: max-content;
+
+    color: rgba(255, 255, 255, 0.9);
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.5px;
+
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    border-radius: 10px;
+
+    background: rgba(255, 255, 255, 0.06);
+
+    backdrop-filter: blur(8px);
+
+    -webkit-backdrop-filter: blur(8px);
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.15);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        background 0.3s ease,
+        color 0.3s ease;
+}
+
+
+/* ================================
+   SKILL ICON
+================================ */
+
+.skill-box i {
+    font-size: 16px;
+
+    color: burlywood;
+
+    transition:
+        transform 0.3s ease,
+        color 0.3s ease;
+}
+
+
+/* ================================
+   HOVER EFFECT
+================================ */
+
+.skill-box:hover {
+    color: white;
+
+    border-color: burlywood;
+
+    background: rgba(222, 184, 135, 0.12);
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 6px 20px rgba(222, 184, 135, 0.15);
+}
+
+
+.skill-box:hover i {
+    color: white;
+
+    transform: scale(1.15);
+}
+
+
+/* ================================
+   INFINITE ANIMATION
+================================ */
+
+@keyframes skillsScroll {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+
+}
+
+
+/* ================================
+   PAUSE ON HOVER
+================================ */
+
+.skills-marquee:hover .skills-track {
+    animation-play-state: paused;
+}
+
+
+/*=======================================================================  */
 
 /* =========================================================
    HEADER
