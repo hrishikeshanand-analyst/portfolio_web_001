@@ -338,24 +338,12 @@ nav ul li a:hover::after {
     color: burlywood;
     font-weight: bold;
     cursor: pointer;
-
-   /* Animation properties for the main heading */
-    opacity: 0;
-    transform: translateY(25px);
-    animation: titleFadeIn 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-
 }
 
 .headr-text h1 span {
     color: #ff0000;
     font-family: "Times New Roman", Times, serif;
     font-weight: bold;
-
-   /* Animation properties for the span (name/subtitle) */
-    display: inline-block;
-    opacity: 0;
-    transform: translateY(15px) scale(0.95);
-    animation: spanFadeIn 1s cubic-bezier(0.16, 1, 0.3, 1) 0.3s forwards;
 }
 
 .animated-text {
