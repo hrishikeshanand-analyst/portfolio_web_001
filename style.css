@@ -214,7 +214,7 @@ img {
 .icon_set {
     display: flex;
     font-size: 2.5rem;
-    color: #ff0000;
+    color: crimson;
     margin-bottom: var(--mb-1);
     transition: .4s;
 }
@@ -224,6 +224,18 @@ img {
 
 }
 
+.title_set {
+    display: flex;
+    font-size: 2.5rem;
+    color: #ff0000;
+    margin-bottom: var(--mb-1);
+    transition: .4s;
+}
+
+.title_set:hover {
+    transform: translateY(.35rem);
+
+}
 
 /* ____________________________________________________________ */
 
