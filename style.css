@@ -227,7 +227,7 @@ img {
 .title_set {
     display: flex;
     font-size: 2.5rem;
-    color: #ff0000;
+    color: crimson;
     margin-bottom: var(--mb-1);
     transition: .4s;
 }
