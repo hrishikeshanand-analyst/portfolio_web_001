@@ -211,6 +211,19 @@ img {
     position: relative;
 }
 
+.icon_set {
+    display: flex;
+    font-size: 2.5rem;
+    color: #ff0000;
+    margin-bottom: var(--mb-1);
+    transition: .4s;
+}
+
+.icon_set:hover {
+    transform: translateY(.35rem);
+
+}
+
 
 /* ____________________________________________________________ */
 
