@@ -337,6 +337,11 @@ nav ul li a:hover::after {
 
     color: burlywood;
     font-weight: bold;
+
+    opacity: 0;
+    transform: translateY(25px);
+    animation: titleFadeIn 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+
     cursor: pointer;
 }
 
@@ -344,8 +349,26 @@ nav ul li a:hover::after {
     color: #ff0000;
     font-family: "Times New Roman", Times, serif;
     font-weight: bold;
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(15px) scale(0.95);
+    animation: spanFadeIn 1s cubic-bezier(0.16, 1, 0.3, 1) 0.3s forwards;
 }
 
+@keyframes titleFadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Keyframes for the span text (with a slight delay) */
+@keyframes spanFadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
 .animated-text {
     margin-top: 20px;
 
